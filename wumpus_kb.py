@@ -482,10 +482,7 @@ def axiom_generator_wumpus_alive_ssa(t):
 
     t := time
     """
-    axiom_str = ''
-    "*** YOUR CODE HERE ***"
-    # Comment or delete the next line once this function has been implemented.
-    utils.print_not_implemented()
+    axiom_str = '{0} <=> ({1} & ~{2})'.format(state_wumpus_alive_str(t+1),state_wumpus_alive_str(t),percept_scream_str(t+1))
     return axiom_str
 
 #----------------------------------
