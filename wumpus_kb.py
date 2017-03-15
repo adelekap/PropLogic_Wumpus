@@ -624,14 +624,18 @@ def generate_heading_only_one_direction_axioms(t):
 
 def axiom_generator_only_one_action_axioms(t):
     """
-    Assert that only one axion can be executed at a time.
+    Assert that only one action can be executed at a time.
     
     t := time
     """
-    axiom_str = ''
-    "*** YOUR CODE HERE ***"
-    # Comment or delete the next line once this function has been implemented.
-    utils.print_not_implemented()
+    actions = ['Forward','Grab','Shoot','Climb','TurnLeft','TurnRight','Wait']
+    axioms = []
+    for index in range(len(actions)):
+        otherActions = [('~' + x + str(t))for i,x in enumerate(actions) if i!=index]
+        axioms.append('{0}{1} <=> ({2})'.format(actions[index],str(t),' & '.join(otherActions)))
+
+    axiom_str = ' & '. join(axioms)
+
     return axiom_str
 
 
