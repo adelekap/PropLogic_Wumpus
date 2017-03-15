@@ -152,10 +152,14 @@ def axiom_generator_percept_sentence(t, tvec):
         Input:  [False, True, False, False, True]
         Output: '~Stench0 & Breeze0 & ~Glitter0 & ~Bump0 & Scream0'
     """
-    axiom_str = ''
-    "*** YOUR CODE HERE ***"
-    # Comment or delete the next line once this function has been implemented.
-    utils.print_not_implemented()
+    props = []
+    percepts = ['Stench','Breeze','Glitter','Bump','Scream']
+    for index in range(len(tvec)):
+        if tvec[index]:
+            props.append(percepts[index] + str(t))
+        else:
+            props.append('~' + percepts[index] + str(t))
+    axiom_str = ' & '.join(props)
     return axiom_str
 
 
@@ -329,7 +333,8 @@ def axiom_generator_location_OK(x, y, t):
     x,y := location
     t := time
     """
-    axiom_str = '{0} >> (~{1} & ~({2} & {3}))'.format(state_OK_str(x,y,t),pit_str(x,y),state_wumpus_alive_str(t),wumpus_str(x,y))
+    axiom_str = '{0} >> (~{1} & ~({2} & {3}))'.format(state_OK_str(x,y,t),pit_str(x,y),state_wumpus_alive_str(t),
+                                                      wumpus_str(x,y))
     return axiom_str
 
 def generate_square_OK_axioms(t, xmin, xmax, ymin, ymax):
@@ -353,8 +358,7 @@ def axiom_generator_breeze_percept_and_location_property(x, y, t):
     x,y := location
     t := time
     """
-    axiom_str = ''
-    "*** YOUR CODE HERE ***"
+    axiom_str = '{0} >> ({1} % {2})'.format(state_loc_str(x,y,t),percept_breeze_str(t),breeze_str(x,y))
     return axiom_str
 
 def generate_breeze_percept_and_location_axioms(t, xmin, xmax, ymin, ymax):
@@ -374,8 +378,7 @@ def axiom_generator_stench_percept_and_location_property(x, y, t):
     x,y := location
     t := time
     """
-    axiom_str = ''
-    "*** YOUR CODE HERE ***"
+    axiom_str = '{0} >> ({1} % {2})'.format(state_loc_str(x,y,t),percept_stench_str(t),stench_str(x,y))
     return axiom_str
 
 def generate_stench_percept_and_location_axioms(t, xmin, xmax, ymin, ymax):
