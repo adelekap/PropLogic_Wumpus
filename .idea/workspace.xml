@@ -12,7 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/PropLogic_Wumpus$wumpus.coverage" NAME="wumpus Coverage Results" MODIFIED="1489613626933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PropLogic_Wumpus$wumpus.coverage" NAME="wumpus Coverage Results" MODIFIED="1489613836025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -43,8 +43,8 @@
       <file leaf-file-name="wumpus_kb.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wumpus_kb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="550" column="0" lean-forward="false" selection-start-line="550" selection-start-column="0" selection-end-line="550" selection-end-column="0" />
+            <state relative-caret-position="326">
+              <caret line="614" column="99" lean-forward="false" selection-start-line="614" selection-start-column="99" selection-end-line="614" selection-end-column="99" />
               <folding />
             </state>
           </provider>
@@ -415,7 +415,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="19" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -454,8 +454,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wumpus_kb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="550" column="0" lean-forward="false" selection-start-line="550" selection-start-column="0" selection-end-line="550" selection-end-column="0" />
+        <state relative-caret-position="326">
+          <caret line="614" column="99" lean-forward="false" selection-start-line="614" selection-start-column="99" selection-end-line="614" selection-end-column="99" />
           <folding />
         </state>
       </provider>

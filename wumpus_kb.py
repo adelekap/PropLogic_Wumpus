@@ -578,10 +578,8 @@ def axiom_generator_heading_only_north(t):
 
     t := time
     """
-    axiom_str = ''
-    "*** YOUR CODE HERE ***"
-    # Comment or delete the next line once this function has been implemented.
-    utils.print_not_implemented()
+    axiom_str = '{0} <=> (~{1} & ~{2} & ~{3})'.format(state_heading_north_str(t),state_heading_south_str(t),
+                                                      state_heading_east_str(t),state_heading_west_str(t))
     return axiom_str
 
 def axiom_generator_heading_only_east(t):
@@ -591,10 +589,8 @@ def axiom_generator_heading_only_east(t):
 
     t := time
     """
-    axiom_str = ''
-    "*** YOUR CODE HERE ***"
-    # Comment or delete the next line once this function has been implemented.
-    utils.print_not_implemented()
+    axiom_str = '{0} <=> (~{1} & ~{2} & ~{3})'.format(state_heading_east_str(t),state_heading_south_str(t),
+                                                      state_heading_north_str(t),state_heading_west_str(t))
     return axiom_str
 
 def axiom_generator_heading_only_south(t):
@@ -604,10 +600,8 @@ def axiom_generator_heading_only_south(t):
 
     t := time
     """
-    axiom_str = ''
-    "*** YOUR CODE HERE ***"
-    # Comment or delete the next line once this function has been implemented.
-    utils.print_not_implemented()
+    axiom_str = '{0} <=> (~{1} & ~{2} & ~{3})'.format(state_heading_south_str(t),state_heading_north_str(t),
+                                                      state_heading_east_str(t),state_heading_west_str(t))
     return axiom_str
 
 def axiom_generator_heading_only_west(t):
@@ -617,10 +611,8 @@ def axiom_generator_heading_only_west(t):
 
     t := time
     """
-    axiom_str = ''
-    "*** YOUR CODE HERE ***"
-    # Comment or delete the next line once this function has been implemented.
-    utils.print_not_implemented()
+    axiom_str = '{0} <=> (~{1} & ~{2} & ~{3})'.format(state_heading_west_str(t),state_heading_south_str(t),
+                                                      state_heading_east_str(t),state_heading_north_str(t))
     return axiom_str
 
 def generate_heading_only_one_direction_axioms(t):
