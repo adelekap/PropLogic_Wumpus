@@ -169,10 +169,7 @@ def axiom_generator_initial_location_assertions(x, y):
 
     x,y := the location
     """
-    axiom_str = ''
-    "*** YOUR CODE HERE ***"
-    # Comment or delete the next line once this function has been implemented.
-    utils.print_not_implemented()
+    axiom_str = '(~{0}) & (~{1})'.format(pit_str(x,y),wumpus_str(x,y))
     return axiom_str
 
 def axiom_generator_pits_and_breezes(x, y, xmin, xmax, ymin, ymax):
@@ -186,7 +183,13 @@ def axiom_generator_pits_and_breezes(x, y, xmin, xmax, ymin, ymax):
            of the environment (and therefore are walls, so can't have Pits).
     """
     axiom_str = ''
-    "*** YOUR CODE HERE ***"
+
+    pits = []
+    for (xVal,yVal) in [((x-1),y),(x,(y-1)),((x+1),y),(x,(y+1))]:
+        if xVal >= xmin and xVal <= xmax and yVal >= ymin and yVal <= ymax:
+            pits.append(pit_str(xVal,yVal))
+    axiom_str += '{0} >> ({1})'.format(breeze_str(x,y),(' | ').join(pits))
+
     return axiom_str
 
 def generate_pit_and_breeze_axioms(xmin, xmax, ymin, ymax):
@@ -211,8 +214,11 @@ def axiom_generator_wumpus_and_stench(x, y, xmin, xmax, ymin, ymax):
            variables to 'prune' any neighboring locations that are outside
            of the environment (and therefore are walls, so can't have Wumpi).
     """
-    axiom_str = ''
-    "*** YOUR CODE HERE ***"
+    wumpi = []
+    for (xVal, yVal) in [((x - 1), y), (x, (y - 1)), ((x + 1), y), (x, (y + 1))]:
+        if xVal >= xmin and xVal <= xmax and yVal >= ymin and yVal <= ymax:
+            wumpi.append(wumpus_str(xVal,yVal))
+    axiom_str = '{0} >> ({1})'.format(stench_str(x,y),(' | ').join(wumpi))
     return axiom_str
 
 def generate_wumpus_and_stench_axioms(xmin, xmax, ymin, ymax):
@@ -230,10 +236,9 @@ def axiom_generator_at_least_one_wumpus(xmin, xmax, ymin, ymax):
 
     xmin, xmax, ymin, ymax := the bounds of the environment.
     """
-    axiom_str = ''
-    "*** YOUR CODE HERE ***"
-    # Comment or delete the next line once this function has been implemented.
-    utils.print_not_implemented()
+    rooms = [wumpus_str(xVal,yVal) for xVal in range(xmin,xmax + 1) for yVal in range(ymin,ymax + 1)]
+
+    axiom_str = ' | '.join(rooms)
     return axiom_str
 
 def axiom_generator_at_most_one_wumpus(xmin, xmax, ymin, ymax):
@@ -242,10 +247,8 @@ def axiom_generator_at_most_one_wumpus(xmin, xmax, ymin, ymax):
 
     xmin, xmax, ymin, ymax := the bounds of the environment.
     """
-    axiom_str = ''
-    "*** YOUR CODE HERE ***"
-    # Comment or delete the next line once this function has been implemented.
-    utils.print_not_implemented()
+    rooms = ['~' + wumpus_str(xVal,yVal) for xVal in range(xmin,xmax + 1) for yVal in range(ymin,ymax + 1)]
+    axiom_str = ' | '.join(rooms)
     return axiom_str
 
 def axiom_generator_only_in_one_location(xi, yi, xmin, xmax, ymin, ymax, t = 0):
@@ -256,10 +259,9 @@ def axiom_generator_only_in_one_location(xi, yi, xmin, xmax, ymin, ymax, t = 0):
     xmin, xmax, ymin, ymax := the bounds of the environment.
     t := time; default=0
     """
-    axiom_str = ''
-    "*** YOUR CODE HERE ***"
-    # Comment or delete the next line once this function has been implemented.
-    utils.print_not_implemented()
+    rooms = [state_loc_str(xVal,yVal,t) for xVal in range(xmin,xmax+1) for yVal in range(ymin,ymax+1)]
+    notRooms = ['~' + state_loc_str(xVal,yVal,t) for xVal in range(xmin,xmax+1) for yVal in range(ymin,ymax+1)]
+    axiom_str = '({0}) & ({1})'.format(' | '.join(rooms),' | '.join(notRooms))
     return axiom_str
 
 def axiom_generator_only_one_heading(heading = 'north', t = 0):
@@ -271,9 +273,15 @@ def axiom_generator_only_one_heading(heading = 'north', t = 0):
     t := time; default=0
     """
     axiom_str = ''
-    "*** YOUR CODE HERE ***"
-    # Comment or delete the next line once this function has been implemented.
-    utils.print_not_implemented()
+
+    headings = ['North','South','East','West']
+    notHeadings = []
+    for h in headings:
+        if h.upper() == heading.upper():
+            axiom_str += 'Heading{0}{1} >> ('.format(h,str(t))
+        else:
+            notHeadings.append('~Heading' + h + str(t))
+    axiom_str += '{0})'.format('&'.join(notHeadings))
     return axiom_str
 
 def axiom_generator_have_arrow_and_wumpus_alive(t = 0):
@@ -282,10 +290,7 @@ def axiom_generator_have_arrow_and_wumpus_alive(t = 0):
 
     t := time; default=0
     """
-    axiom_str = ''
-    "*** YOUR CODE HERE ***"
-    # Comment or delete the next line once this function has been implemented.
-    utils.print_not_implemented()
+    axiom_str = '{0} & {1}'.format(state_have_arrow_str(t),state_wumpus_alive_str(t))
     return axiom_str
 
 
@@ -324,8 +329,7 @@ def axiom_generator_location_OK(x, y, t):
     x,y := location
     t := time
     """
-    axiom_str = ''
-    "*** YOUR CODE HERE ***"
+    axiom_str = '{0} >> (~{1} & ~({2} & {3}))'.format(state_OK_str(x,y,t),pit_str(x,y),state_wumpus_alive_str(t),wumpus_str(x,y))
     return axiom_str
 
 def generate_square_OK_axioms(t, xmin, xmax, ymin, ymax):

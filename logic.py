@@ -154,10 +154,7 @@ class Expr:
     F(x); it works by overloading the __call__ method of the Expr F.  Note
     that in the Expr that is created by F(x), the op is the str 'F', not the
     Expr F.   See http://www.python.org/doc/current/ref/specialnames.html
-    to learn more about operator overloading in Python.
-
-    WARNING: x == y and x != y are NOT Exprs.  The reason is that we want
-    to write code that tests 'if x == y:' and if x == y were the same
+    to learn more about operator overloading in Python. t tests 'if x == y:' and if x == y were the same
     as Expr('==', x, y), then the result would always be true; not what a
     programmer would expect.  But we still need to form Exprs representing
     equalities and disequalities.  We concentrate on logical equality (or
