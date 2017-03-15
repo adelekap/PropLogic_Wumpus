@@ -414,9 +414,24 @@ def axiom_generator_at_location_ssa(t, x, y, xmin, xmax, ymin, ymax):
     x,y := location
     t := time
     xmin, xmax, ymin, ymax := the bounds of the environment.
+
     """
-    axiom_str = ''
-    "*** YOUR CODE HERE ***"
+    moves = ['{0} & (~{1} | {2})'.format(state_loc_str(x,y,t),action_forward_str(t),percept_bump_str(t+1))]
+
+    for ((xVal,yVal),move) in [(((x-1),y),'E'),((x,(y-1)),'N'),(((x+1),y),'W'),((x,(y+1)),'S')]:
+        if xVal >= xmin and xVal <= xmax and yVal >= ymin and yVal <= ymax:
+            if move == 'N':
+                moves.append('{0} & ({1} & {2})'.format(state_loc_str(x,y-1,t),state_heading_north_str(t),action_forward_str(t)))
+            if move == 'E':
+                moves.append('{0} & ({1} & {2})'.format(state_loc_str(x - 1, y, t), state_heading_east_str(t), action_forward_str(t)))
+            if move == 'W':
+                moves.append('{0} & ({1} & {2})'.format(state_loc_str(x + 1, y, t), state_heading_west_str(t), action_forward_str(t)))
+            if move == 'S':
+                moves.append('{0} & ({1} & {2})'.format(state_loc_str(x,y+1,t),state_heading_south_str(t),action_forward_str(t)))
+
+    sucLoc = state_loc_str(x,y,t+1)
+    axiom_str = '{0} <=> {1}'.format(sucLoc,' | '.join(moves))
+
     return axiom_str
 
 def generate_at_location_ssa(t, x, y, xmin, xmax, ymin, ymax, heading):
