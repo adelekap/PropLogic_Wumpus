@@ -468,10 +468,7 @@ def axiom_generator_have_arrow_ssa(t):
 
     t := time
     """
-    axiom_str = ''
-    "*** YOUR CODE HERE ***"
-    # Comment or delete the next line once this function has been implemented.
-    utils.print_not_implemented()
+    axiom_str = '{0} <=> ({1} & ~{2})'.format(state_have_arrow_str(t+1),state_have_arrow_str(t),action_shoot_str(t))
     return axiom_str
 
 def axiom_generator_wumpus_alive_ssa(t):
