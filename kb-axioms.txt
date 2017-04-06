@@ -1,0 +1,92 @@
+None
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+L1_1_0 & ~L1_2_0 & ~L1_3_0 & ~L1_4_0 & ~L2_1_0 & ~L2_2_0 & ~L2_3_0 & ~L2_4_0 & ~L3_1_0 & ~L3_2_0 & ~L3_3_0 & ~L3_4_0 & ~L4_1_0 & ~L4_2_0 & ~L4_3_0 & ~L4_4_0
+HeadingNorth0 & (~HeadingSouth0&~HeadingEast0&~HeadingWest0)
+
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+
+L1_2_1 <=> ((L1_2_0 & (~Forward0 | Bump1 | Grab0 | Shoot0 | TurnLeft0 | TurnRight0)) | (L1_1_0 & (HeadingNorth0 & Forward0)) | (L2_2_0 & (HeadingWest0 & Forward0)) | (L1_3_0 & (HeadingSouth0 & Forward0)))
+HeadingNorth1 <=> ((HeadingNorth0 & (Wait0 | Grab0 | Shoot0 | Bump1)) | (HeadingEast0 & TurnLeft0) | (HeadingWest0 & TurnRight0))
+HeadingEast1 <=> ((HeadingEast0 & (Wait0 | Grab0 | Shoot0 | Bump1)) | (HeadingSouth0 & TurnLeft0) | (HeadingNorth0 & TurnRight0))
+HeadingSouth1 <=> ((HeadingSouth0 & (Wait0 | Grab0 | Shoot0 | Bump1)) | (HeadingWest0 & TurnLeft0) | (HeadingEast0 & TurnRight0))
+HeadingWest1 <=> ((HeadingWest0 & (Wait0 | Grab0 | Shoot0 | Bump1)) | (HeadingNorth0 & TurnLeft0) | (HeadingSouth0 & TurnRight0))
+HeadingNorth1 <=> (~HeadingSouth1 & ~HeadingEast1 & ~HeadingWest1)
+HeadingEast1 <=> (~HeadingSouth1 & ~HeadingNorth1 & ~HeadingWest1)
+HeadingSouth1 <=> (~HeadingNorth1 & ~HeadingEast1 & ~HeadingWest1)
+HeadingWest1 <=> (~HeadingSouth1 & ~HeadingEast1 & ~HeadingNorth1)
+(Forward0 <=> (~Grab0 & ~Shoot0 & ~Climb0 & ~TurnLeft0 & ~TurnRight0 & ~Wait0)) & (Grab0 <=> (~Forward0 & ~Shoot0 & ~Climb0 & ~TurnLeft0 & ~TurnRight0 & ~Wait0)) & (Shoot0 <=> (~Forward0 & ~Grab0 & ~Climb0 & ~TurnLeft0 & ~TurnRight0 & ~Wait0)) & (Climb0 <=> (~Forward0 & ~Grab0 & ~Shoot0 & ~TurnLeft0 & ~TurnRight0 & ~Wait0)) & (TurnLeft0 <=> (~Forward0 & ~Grab0 & ~Shoot0 & ~Climb0 & ~TurnRight0 & ~Wait0)) & (TurnRight0 <=> (~Forward0 & ~Grab0 & ~Shoot0 & ~Climb0 & ~TurnLeft0 & ~Wait0)) & (Wait0 <=> (~Forward0 & ~Grab0 & ~Shoot0 & ~Climb0 & ~TurnLeft0 & ~TurnRight0))
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+L1_2_2 <=> ((L1_2_1 & (~Forward1 | Bump2 | Grab1 | Shoot1 | TurnLeft1 | TurnRight1)) | (L1_1_1 & (HeadingNorth1 & Forward1)) | (L2_2_1 & (HeadingWest1 & Forward1)) | (L1_3_1 & (HeadingSouth1 & Forward1)))
+L1_3_2 <=> ((L1_3_1 & (~Forward1 | Bump2 | Grab1 | Shoot1 | TurnLeft1 | TurnRight1)) | (L1_2_1 & (HeadingNorth1 & Forward1)) | (L2_3_1 & (HeadingWest1 & Forward1)) | (L1_4_1 & (HeadingSouth1 & Forward1)))
+HeadingNorth2 <=> ((HeadingNorth1 & (Wait1 | Grab1 | Shoot1 | Bump2)) | (HeadingEast1 & TurnLeft1) | (HeadingWest1 & TurnRight1))
+HeadingEast2 <=> ((HeadingEast1 & (Wait1 | Grab1 | Shoot1 | Bump2)) | (HeadingSouth1 & TurnLeft1) | (HeadingNorth1 & TurnRight1))
+HeadingSouth2 <=> ((HeadingSouth1 & (Wait1 | Grab1 | Shoot1 | Bump2)) | (HeadingWest1 & TurnLeft1) | (HeadingEast1 & TurnRight1))
+HeadingWest2 <=> ((HeadingWest1 & (Wait1 | Grab1 | Shoot1 | Bump2)) | (HeadingNorth1 & TurnLeft1) | (HeadingSouth1 & TurnRight1))
+HeadingNorth2 <=> (~HeadingSouth2 & ~HeadingEast2 & ~HeadingWest2)
+HeadingEast2 <=> (~HeadingSouth2 & ~HeadingNorth2 & ~HeadingWest2)
+HeadingSouth2 <=> (~HeadingNorth2 & ~HeadingEast2 & ~HeadingWest2)
+HeadingWest2 <=> (~HeadingSouth2 & ~HeadingEast2 & ~HeadingNorth2)
+(Forward1 <=> (~Grab1 & ~Shoot1 & ~Climb1 & ~TurnLeft1 & ~TurnRight1 & ~Wait1)) & (Grab1 <=> (~Forward1 & ~Shoot1 & ~Climb1 & ~TurnLeft1 & ~TurnRight1 & ~Wait1)) & (Shoot1 <=> (~Forward1 & ~Grab1 & ~Climb1 & ~TurnLeft1 & ~TurnRight1 & ~Wait1)) & (Climb1 <=> (~Forward1 & ~Grab1 & ~Shoot1 & ~TurnLeft1 & ~TurnRight1 & ~Wait1)) & (TurnLeft1 <=> (~Forward1 & ~Grab1 & ~Shoot1 & ~Climb1 & ~TurnRight1 & ~Wait1)) & (TurnRight1 <=> (~Forward1 & ~Grab1 & ~Shoot1 & ~Climb1 & ~TurnLeft1 & ~Wait1)) & (Wait1 <=> (~Forward1 & ~Grab1 & ~Shoot1 & ~Climb1 & ~TurnLeft1 & ~TurnRight1))

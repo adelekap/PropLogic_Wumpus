@@ -77,7 +77,7 @@ def plan_route(current, heading, goals, allowed):
     Given:
        current location: tuple (x,y)
        heading: integer representing direction
-       gaals: list of one or more tuple goal-states
+       goals: list of one or more tuple goal-states
        allowed: list of locations that can be moved to
     ... return a list of actions (no time stamps!) that when executed
     will take the agent from the current location to one of (the closest)
@@ -132,15 +132,22 @@ class PlanRouteProblem(search.Problem):
         """
         Return list of allowed actions that can be made in state
         """
-        "*** YOUR CODE HERE ***"
-        pass
-
+        noForward = ['TurnRight','TurnLeft','Grab','Climb','Shoot','Wait']
+        Forward = ['TurnRight','TurnLeft','Grab','Climb','Shoot','Wait','Forward']
+        if state[0] == 1 and state[2]==1:
+            return noForward
+        if state[0] == 4 and state[2] == 3:
+            return noForward
+        if state[1] == 1 and state[2] == 2:
+            return noForward
+        if state[1] == 4 and state[2] == 0:
+            return noForward
+        return Forward
 
     def result(self, state, action):
         """
         Return the new state after applying action to state
         """
-        "*** YOUR CODE HERE ***"
         pass
 
     def goal_test(self, state):

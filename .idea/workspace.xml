@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87d86afe-8c7b-4d78-a672-9c25d578f7e0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wumpus_kb.py" afterPath="$PROJECT_DIR$/wumpus_kb.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wumpus_planners.py" afterPath="$PROJECT_DIR$/wumpus_planners.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,7 +14,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/PropLogic_Wumpus$wumpus.coverage" NAME="wumpus Coverage Results" MODIFIED="1489615600577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PropLogic_Wumpus$wumpus_planners.coverage" NAME="wumpus_planners Coverage Results" MODIFIED="1491236551701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PropLogic_Wumpus$wumpus.coverage" NAME="wumpus Coverage Results" MODIFIED="1491453079719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -23,9 +26,11 @@
       <file leaf-file-name="wumpus.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wumpus.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-390">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="136">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding>
+                <element signature="e#951#977#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -33,9 +38,11 @@
       <file leaf-file-name="logic.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/logic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
+            <state relative-caret-position="3004">
               <caret line="238" column="35" lean-forward="false" selection-start-line="238" selection-start-column="33" selection-end-line="238" selection-end-column="35" />
-              <folding />
+              <folding>
+                <element signature="e#2014#2034#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -43,9 +50,51 @@
       <file leaf-file-name="wumpus_kb.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wumpus_kb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="638" column="0" lean-forward="false" selection-start-line="638" selection-start-column="0" selection-end-line="638" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="271">
+              <caret line="639" column="0" lean-forward="true" selection-start-line="639" selection-start-column="0" selection-end-line="639" selection-end-column="0" />
+              <folding>
+                <element signature="e#6373#6567#0" expanded="false" />
+                <element signature="e#6642#7125#0" expanded="false" />
+                <element signature="e#7192#7499#0" expanded="false" />
+                <element signature="e#7575#8157#0" expanded="false" />
+                <element signature="e#8227#8536#0" expanded="false" />
+                <element signature="e#8608#8909#0" expanded="false" />
+                <element signature="e#8980#9283#0" expanded="false" />
+                <element signature="e#10038#10621#0" expanded="false" />
+                <element signature="e#10682#10972#0" expanded="false" />
+                <element signature="e#11045#11829#0" expanded="false" />
+                <element signature="e#12105#12476#0" expanded="false" />
+                <element signature="e#12542#12845#0" expanded="false" />
+                <element signature="e#13082#13343#0" expanded="false" />
+                <element signature="e#13426#13779#0" expanded="false" />
+                <element signature="e#13853#14117#0" expanded="false" />
+                <element signature="e#14200#14553#0" expanded="false" />
+                <element signature="e#18359#18655#0" expanded="false" />
+                <element signature="e#18703#19208#0" expanded="false" />
+                <element signature="e#22091#22339#0" expanded="false" />
+                <element signature="e#22380#22692#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="propositions.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/propositions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="338" column="0" lean-forward="false" selection-start-line="338" selection-start-column="0" selection-end-line="340" selection-end-column="20" />
+              <folding>
+                <element signature="e#1265#1327#0" expanded="false" />
+                <element signature="e#1354#1419#0" expanded="false" />
+                <element signature="e#1446#1511#0" expanded="false" />
+                <element signature="e#1538#1603#0" expanded="false" />
+                <element signature="e#1787#1855#0" expanded="false" />
+                <element signature="e#1887#1955#0" expanded="false" />
+                <element signature="e#1988#2058#0" expanded="false" />
+                <element signature="e#2088#2152#0" expanded="false" />
+                <element signature="e#2184#2252#0" expanded="false" />
+                <element signature="e#2335#2414#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,8 +112,8 @@
       <file leaf-file-name="wumpus_planners.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wumpus_planners.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="195">
+              <caret line="139" column="28" lean-forward="true" selection-start-line="139" selection-start-column="28" selection-end-line="139" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -76,6 +125,13 @@
     <findStrings>
       <find>Wumpus</find>
       <find>&gt;&gt;</find>
+      <find>location</find>
+      <find>initial_location</find>
+      <find>infer_and</find>
+      <find>percept_sentence</find>
+      <find>initial_l</find>
+      <find>location_OK</find>
+      <find>one_location</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -85,6 +141,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/logic.py" />
+        <option value="$PROJECT_DIR$/wumpus_planners.py" />
+        <option value="$PROJECT_DIR$/propositions.py" />
         <option value="$PROJECT_DIR$/wumpus_kb.py" />
       </list>
     </option>
@@ -100,7 +158,7 @@
     <option name="height" value="800" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -113,24 +171,7 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PropLogic_Wumpus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PropLogic_Wumpus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -156,7 +197,25 @@
       <module name="PropLogic_Wumpus" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wumpus.py" />
-      <option name="PARAMETERS" value="-y" />
+      <option name="PARAMETERS" value="-k" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="wumpus_planners" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PropLogic_Wumpus" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wumpus_planners.py" />
+      <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
@@ -249,6 +308,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -368,12 +433,14 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Python.wumpus" />
+      <item index="1" class="java.lang.String" itemvalue="Python.wumpus_planners" />
     </list>
     <recent_temporary>
-      <list size="1">
+      <list size="2">
         <item index="0" class="java.lang.String" itemvalue="Python.wumpus" />
+        <item index="1" class="java.lang.String" itemvalue="Python.wumpus_planners" />
       </list>
     </recent_temporary>
   </component>
@@ -403,7 +470,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -415,7 +482,29 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25282714" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -425,7 +514,24 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="25" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/wumpus_planners.py</url>
+          <line>150</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/wumpus_kb.py</url>
+          <line>397</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/wumpus_kb.py</url>
+          <line>580</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="72" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -434,6 +540,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#951#977#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3540">
+          <caret line="238" column="35" lean-forward="false" selection-start-line="238" selection-start-column="33" selection-end-line="238" selection-end-column="35" />
+          <folding>
+            <element signature="e#2014#2034#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wumpus_kb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9225">
+          <caret line="615" column="9" lean-forward="true" selection-start-line="615" selection-start-column="9" selection-end-line="615" selection-end-column="9" />
+          <folding>
+            <element signature="e#6373#6567#0" expanded="false" />
+            <element signature="e#6642#7125#0" expanded="false" />
+            <element signature="e#7192#7499#0" expanded="false" />
+            <element signature="e#7575#8157#0" expanded="false" />
+            <element signature="e#8227#8536#0" expanded="false" />
+            <element signature="e#8608#8909#0" expanded="false" />
+            <element signature="e#8980#9283#0" expanded="false" />
+            <element signature="e#10038#10621#0" expanded="false" />
+            <element signature="e#10682#10972#0" expanded="false" />
+            <element signature="e#11045#11829#0" expanded="false" />
+            <element signature="e#12105#12476#0" expanded="false" />
+            <element signature="e#12542#12845#0" expanded="false" />
+            <element signature="e#13082#13343#0" expanded="false" />
+            <element signature="e#13426#13779#0" expanded="false" />
+            <element signature="e#13853#14117#0" expanded="false" />
+            <element signature="e#14200#14553#0" expanded="false" />
+            <element signature="e#18359#18655#0" expanded="false" />
+            <element signature="e#18703#19208#0" expanded="false" />
+            <element signature="e#22091#22339#0" expanded="false" />
+            <element signature="e#22380#22692#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wumpus_agent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -448,16 +603,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wumpus.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-390">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#951#977#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
+        <state relative-caret-position="3004">
           <caret line="238" column="35" lean-forward="false" selection-start-line="238" selection-start-column="33" selection-end-line="238" selection-end-column="35" />
+          <folding>
+            <element signature="e#2014#2034#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wumpus_planners.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="139" column="28" lean-forward="true" selection-start-line="139" selection-start-column="28" selection-end-line="139" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -470,11 +637,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wumpus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#951#977#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/propositions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="338" column="0" lean-forward="false" selection-start-line="338" selection-start-column="0" selection-end-line="340" selection-end-column="20" />
+          <folding>
+            <element signature="e#1265#1327#0" expanded="false" />
+            <element signature="e#1354#1419#0" expanded="false" />
+            <element signature="e#1446#1511#0" expanded="false" />
+            <element signature="e#1538#1603#0" expanded="false" />
+            <element signature="e#1787#1855#0" expanded="false" />
+            <element signature="e#1887#1955#0" expanded="false" />
+            <element signature="e#1988#2058#0" expanded="false" />
+            <element signature="e#2088#2152#0" expanded="false" />
+            <element signature="e#2184#2252#0" expanded="false" />
+            <element signature="e#2335#2414#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wumpus_kb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="638" column="0" lean-forward="false" selection-start-line="638" selection-start-column="0" selection-end-line="638" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="271">
+          <caret line="639" column="0" lean-forward="true" selection-start-line="639" selection-start-column="0" selection-end-line="639" selection-end-column="0" />
+          <folding>
+            <element signature="e#6373#6567#0" expanded="false" />
+            <element signature="e#6642#7125#0" expanded="false" />
+            <element signature="e#7192#7499#0" expanded="false" />
+            <element signature="e#7575#8157#0" expanded="false" />
+            <element signature="e#8227#8536#0" expanded="false" />
+            <element signature="e#8608#8909#0" expanded="false" />
+            <element signature="e#8980#9283#0" expanded="false" />
+            <element signature="e#10038#10621#0" expanded="false" />
+            <element signature="e#10682#10972#0" expanded="false" />
+            <element signature="e#11045#11829#0" expanded="false" />
+            <element signature="e#12105#12476#0" expanded="false" />
+            <element signature="e#12542#12845#0" expanded="false" />
+            <element signature="e#13082#13343#0" expanded="false" />
+            <element signature="e#13426#13779#0" expanded="false" />
+            <element signature="e#13853#14117#0" expanded="false" />
+            <element signature="e#14200#14553#0" expanded="false" />
+            <element signature="e#18359#18655#0" expanded="false" />
+            <element signature="e#18703#19208#0" expanded="false" />
+            <element signature="e#22091#22339#0" expanded="false" />
+            <element signature="e#22380#22692#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
