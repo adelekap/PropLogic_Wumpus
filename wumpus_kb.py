@@ -203,15 +203,15 @@ def axiom_generator_percept_sentence(t, tvec):
         Input:  [False, True, False, False, True]
         Output: '~Stench0 & Breeze0 & ~Glitter0 & ~Bump0 & Scream0'
     """
-    # props = []
-    # percepts = ['Stench','Breeze','Glitter','Bump','Scream']
-    # for index in range(len(tvec)):
-    #     if tvec[index]:
-    #         props.append(percepts[index] + str(t))
-    #     else:
-    #         props.append('~' + percepts[index] + str(t))
-    # axiom_str = ' & '.join(props)
-    # return axiom_str
+    props = []
+    percepts = ['Stench','Breeze','Glitter','Bump','Scream']
+    for index in range(len(tvec)):
+        if tvec[index]:
+            props.append(percepts[index] + str(t))
+        else:
+            props.append('~' + percepts[index] + str(t))
+    axiom_str = ' & '.join(props)
+    return axiom_str
 
 
 # -------------------------------------------------------------------------------
@@ -224,8 +224,8 @@ def axiom_generator_initial_location_assertions(x, y):
 
     x,y := the location
     """
-    # axiom_str = '(~{0}) & (~{1})'.format(pit_str(x,y),wumpus_str(x,y))
-    # return axiom_str
+    axiom_str = '(~{0}) & (~{1})'.format(pit_str(x,y),wumpus_str(x,y))
+    return axiom_str
 
 
 def axiom_generator_pits_and_breezes(x, y, xmin, xmax, ymin, ymax):
@@ -239,7 +239,13 @@ def axiom_generator_pits_and_breezes(x, y, xmin, xmax, ymin, ymax):
            of the environment (and therefore are walls, so can't have Pits).
     """
     axiom_str = ''
-    "*** YOUR CODE HERE ***"
+
+    pits = []
+    for (xVal,yVal) in [((x-1),y),(x,(y-1)),((x+1),y),(x,(y+1))]:
+        if xVal >= xmin and xVal <= xmax and yVal >= ymin and yVal <= ymax:
+            pits.append(pit_str(xVal,yVal))
+    axiom_str += '{0} >> ({1})'.format(breeze_str(x,y),(' | ').join(pits))
+
     return axiom_str
 
 
@@ -266,8 +272,11 @@ def axiom_generator_wumpus_and_stench(x, y, xmin, xmax, ymin, ymax):
            variables to 'prune' any neighboring locations that are outside
            of the environment (and therefore are walls, so can't have Wumpi).
     """
-    axiom_str = ''
-    "*** YOUR CODE HERE ***"
+    wumpi = []
+    for (xVal, yVal) in [((x - 1), y), (x, (y - 1)), ((x + 1), y), (x, (y + 1))]:
+        if xVal >= xmin and xVal <= xmax and yVal >= ymin and yVal <= ymax:
+            wumpi.append(wumpus_str(xVal, yVal))
+    axiom_str = '{0} >> ({1})'.format(stench_str(x, y), (' | ').join(wumpi))
     return axiom_str
 
 
@@ -287,10 +296,9 @@ def axiom_generator_at_least_one_wumpus(xmin, xmax, ymin, ymax):
 
     xmin, xmax, ymin, ymax := the bounds of the environment.
     """
-    axiom_str = ''
-    "*** YOUR CODE HERE ***"
-    # Comment or delete the next line once this function has been implemented.
-    utils.print_not_implemented()
+    rooms = [wumpus_str(xVal,yVal) for xVal in range(xmin,xmax + 1) for yVal in range(ymin,ymax + 1)]
+
+    axiom_str = ' | '.join(rooms)
     return axiom_str
 
 
@@ -300,10 +308,8 @@ def axiom_generator_at_most_one_wumpus(xmin, xmax, ymin, ymax):
 
     xmin, xmax, ymin, ymax := the bounds of the environment.
     """
-    axiom_str = ''
-    "*** YOUR CODE HERE ***"
-    # Comment or delete the next line once this function has been implemented.
-    utils.print_not_implemented()
+    rooms = ['~' + wumpus_str(xVal,yVal) for xVal in range(xmin,xmax + 1) for yVal in range(ymin,ymax + 1)]
+    axiom_str = ' | '.join(rooms)
     return axiom_str
 
 
@@ -351,10 +357,7 @@ def axiom_generator_have_arrow_and_wumpus_alive(t=0):
 
     t := time; default=0
     """
-    axiom_str = ''
-    "*** YOUR CODE HERE ***"
-    # Comment or delete the next line once this function has been implemented.
-    utils.print_not_implemented()
+    axiom_str = '{0} & {1}'.format(state_have_arrow_str(t),state_wumpus_alive_str(t))
     return axiom_str
 
 
@@ -420,8 +423,7 @@ def axiom_generator_breeze_percept_and_location_property(x, y, t):
     x,y := location
     t := time
     """
-    axiom_str = ''
-    "*** YOUR CODE HERE ***"
+    axiom_str = '{0} >> ({1} % {2})'.format(state_loc_str(x,y,t),percept_breeze_str(t),breeze_str(x,y))
     return axiom_str
 
 
@@ -443,8 +445,7 @@ def axiom_generator_stench_percept_and_location_property(x, y, t):
     x,y := location
     t := time
     """
-    axiom_str = ''
-    "*** YOUR CODE HERE ***"
+    axiom_str = '{0} >> ({1} % {2})'.format(state_loc_str(x,y,t),percept_stench_str(t),stench_str(x,y))
     return axiom_str
 
 
@@ -537,10 +538,7 @@ def axiom_generator_have_arrow_ssa(t):
 
     t := time
     """
-    axiom_str = ''
-    "*** YOUR CODE HERE ***"
-    # Comment or delete the next line once this function has been implemented.
-    utils.print_not_implemented()
+    axiom_str = '{0} <=> ({1} & ~{2})'.format(state_have_arrow_str(t+1),state_have_arrow_str(t),action_shoot_str(t))
     return axiom_str
 
 
