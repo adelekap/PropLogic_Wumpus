@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="87d86afe-8c7b-4d78-a672-9c25d578f7e0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wumpus_kb.py" afterPath="$PROJECT_DIR$/wumpus_kb.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wumpus_planners.py" afterPath="$PROJECT_DIR$/wumpus_planners.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,7 +13,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/PropLogic_Wumpus$wumpus_planners.coverage" NAME="wumpus_planners Coverage Results" MODIFIED="1491236551701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PropLogic_Wumpus$wumpus.coverage" NAME="wumpus Coverage Results" MODIFIED="1491458760842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PropLogic_Wumpus$wumpus.coverage" NAME="wumpus Coverage Results" MODIFIED="1491459247752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -46,39 +45,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wumpus_kb.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="wumpus_kb.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wumpus_kb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="280" column="0" lean-forward="true" selection-start-line="280" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
+            <state relative-caret-position="244">
+              <caret line="281" column="0" lean-forward="false" selection-start-line="281" selection-start-column="0" selection-end-line="281" selection-end-column="0" />
               <folding>
-                <element signature="e#7419#7726#0" expanded="false" />
-                <element signature="e#8706#9015#0" expanded="false" />
-                <element signature="e#9087#9364#0" expanded="false" />
-                <element signature="e#9435#9719#0" expanded="false" />
-                <element signature="e#9805#10407#0" expanded="false" />
-                <element signature="e#10474#11057#0" expanded="false" />
-                <element signature="e#11118#11333#0" expanded="false" />
-                <element signature="e#11406#12190#0" expanded="false" />
-                <element signature="e#12898#13201#0" expanded="false" />
-                <element signature="e#13438#13755#0" expanded="false" />
-                <element signature="e#13838#14191#0" expanded="false" />
-                <element signature="e#14265#14585#0" expanded="false" />
-                <element signature="e#14668#15021#0" expanded="false" />
-                <element signature="e#15642#17295#0" expanded="false" />
-                <element signature="e#17374#18743#0" expanded="false" />
-                <element signature="e#19684#20338#0" expanded="false" />
-                <element signature="e#20386#21039#0" expanded="false" />
-                <element signature="e#21088#21742#0" expanded="false" />
-                <element signature="e#21790#22443#0" expanded="false" />
-                <element signature="e#22479#22727#0" expanded="false" />
-                <element signature="e#22768#23080#0" expanded="false" />
-                <element signature="e#23168#23522#0" expanded="false" />
-                <element signature="e#23571#23922#0" expanded="false" />
-                <element signature="e#23971#24323#0" expanded="false" />
-                <element signature="e#24371#24722#0" expanded="false" />
-                <element signature="e#25031#25491#0" expanded="false" />
-                <element signature="e#25541#25923#0" expanded="false" />
+                <element signature="e#7458#7765#0" expanded="false" />
+                <element signature="e#8785#9094#0" expanded="false" />
+                <element signature="e#9166#9443#0" expanded="false" />
+                <element signature="e#9514#9798#0" expanded="false" />
+                <element signature="e#9884#10486#0" expanded="false" />
+                <element signature="e#10553#11136#0" expanded="false" />
+                <element signature="e#11197#11412#0" expanded="false" />
+                <element signature="e#11485#12269#0" expanded="false" />
+                <element signature="e#12977#13280#0" expanded="false" />
+                <element signature="e#13517#13834#0" expanded="false" />
+                <element signature="e#13917#14270#0" expanded="false" />
+                <element signature="e#14344#14664#0" expanded="false" />
+                <element signature="e#14747#15100#0" expanded="false" />
+                <element signature="e#15721#17374#0" expanded="false" />
+                <element signature="e#17453#18822#0" expanded="false" />
+                <element signature="e#19763#20417#0" expanded="false" />
+                <element signature="e#20465#21118#0" expanded="false" />
+                <element signature="e#21167#21821#0" expanded="false" />
+                <element signature="e#21869#22522#0" expanded="false" />
+                <element signature="e#22558#22806#0" expanded="false" />
+                <element signature="e#22847#23159#0" expanded="false" />
+                <element signature="e#23247#23601#0" expanded="false" />
+                <element signature="e#23650#24001#0" expanded="false" />
+                <element signature="e#24050#24402#0" expanded="false" />
+                <element signature="e#24450#24801#0" expanded="false" />
+                <element signature="e#25110#25570#0" expanded="false" />
+                <element signature="e#25620#26002#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -147,7 +146,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wumpus_planners.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="wumpus_planners.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wumpus_planners.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="251">
@@ -187,8 +186,8 @@
       <find>percept_sente</find>
       <find>stench_percept</find>
       <find>have_arrow</find>
-      <find>wumpus_alive</find>
       <find>Node</find>
+      <find>wumpus_alive</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -582,13 +581,8 @@
           <line>108</line>
           <option name="timeStamp" value="98" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/wumpus_kb.py</url>
-          <line>248</line>
-          <option name="timeStamp" value="105" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="106" />
+      <option name="time" value="109" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -618,33 +612,33 @@
         <state relative-caret-position="9225">
           <caret line="615" column="9" lean-forward="true" selection-start-line="615" selection-start-column="9" selection-end-line="615" selection-end-column="9" />
           <folding>
-            <element signature="e#7419#7726#0" expanded="false" />
-            <element signature="e#8706#9015#0" expanded="false" />
-            <element signature="e#9087#9364#0" expanded="false" />
-            <element signature="e#9435#9719#0" expanded="false" />
-            <element signature="e#9805#10407#0" expanded="false" />
-            <element signature="e#10474#11057#0" expanded="false" />
-            <element signature="e#11118#11333#0" expanded="false" />
-            <element signature="e#11406#12190#0" expanded="false" />
-            <element signature="e#12898#13201#0" expanded="false" />
-            <element signature="e#13438#13755#0" expanded="false" />
-            <element signature="e#13838#14191#0" expanded="false" />
-            <element signature="e#14265#14585#0" expanded="false" />
-            <element signature="e#14668#15021#0" expanded="false" />
-            <element signature="e#15642#17295#0" expanded="false" />
-            <element signature="e#17374#18743#0" expanded="false" />
-            <element signature="e#19684#20338#0" expanded="false" />
-            <element signature="e#20386#21039#0" expanded="false" />
-            <element signature="e#21088#21742#0" expanded="false" />
-            <element signature="e#21790#22443#0" expanded="false" />
-            <element signature="e#22479#22727#0" expanded="false" />
-            <element signature="e#22768#23080#0" expanded="false" />
-            <element signature="e#23168#23522#0" expanded="false" />
-            <element signature="e#23571#23922#0" expanded="false" />
-            <element signature="e#23971#24323#0" expanded="false" />
-            <element signature="e#24371#24722#0" expanded="false" />
-            <element signature="e#25031#25491#0" expanded="false" />
-            <element signature="e#25541#25923#0" expanded="false" />
+            <element signature="e#7458#7765#0" expanded="false" />
+            <element signature="e#8785#9094#0" expanded="false" />
+            <element signature="e#9166#9443#0" expanded="false" />
+            <element signature="e#9514#9798#0" expanded="false" />
+            <element signature="e#9884#10486#0" expanded="false" />
+            <element signature="e#10553#11136#0" expanded="false" />
+            <element signature="e#11197#11412#0" expanded="false" />
+            <element signature="e#11485#12269#0" expanded="false" />
+            <element signature="e#12977#13280#0" expanded="false" />
+            <element signature="e#13517#13834#0" expanded="false" />
+            <element signature="e#13917#14270#0" expanded="false" />
+            <element signature="e#14344#14664#0" expanded="false" />
+            <element signature="e#14747#15100#0" expanded="false" />
+            <element signature="e#15721#17374#0" expanded="false" />
+            <element signature="e#17453#18822#0" expanded="false" />
+            <element signature="e#19763#20417#0" expanded="false" />
+            <element signature="e#20465#21118#0" expanded="false" />
+            <element signature="e#21167#21821#0" expanded="false" />
+            <element signature="e#21869#22522#0" expanded="false" />
+            <element signature="e#22558#22806#0" expanded="false" />
+            <element signature="e#22847#23159#0" expanded="false" />
+            <element signature="e#23247#23601#0" expanded="false" />
+            <element signature="e#23650#24001#0" expanded="false" />
+            <element signature="e#24050#24402#0" expanded="false" />
+            <element signature="e#24450#24801#0" expanded="false" />
+            <element signature="e#25110#25570#0" expanded="false" />
+            <element signature="e#25620#26002#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -767,6 +761,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wumpus_kb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="281" column="0" lean-forward="false" selection-start-line="281" selection-start-column="0" selection-end-line="281" selection-end-column="0" />
+          <folding>
+            <element signature="e#7458#7765#0" expanded="false" />
+            <element signature="e#8785#9094#0" expanded="false" />
+            <element signature="e#9166#9443#0" expanded="false" />
+            <element signature="e#9514#9798#0" expanded="false" />
+            <element signature="e#9884#10486#0" expanded="false" />
+            <element signature="e#10553#11136#0" expanded="false" />
+            <element signature="e#11197#11412#0" expanded="false" />
+            <element signature="e#11485#12269#0" expanded="false" />
+            <element signature="e#12977#13280#0" expanded="false" />
+            <element signature="e#13517#13834#0" expanded="false" />
+            <element signature="e#13917#14270#0" expanded="false" />
+            <element signature="e#14344#14664#0" expanded="false" />
+            <element signature="e#14747#15100#0" expanded="false" />
+            <element signature="e#15721#17374#0" expanded="false" />
+            <element signature="e#17453#18822#0" expanded="false" />
+            <element signature="e#19763#20417#0" expanded="false" />
+            <element signature="e#20465#21118#0" expanded="false" />
+            <element signature="e#21167#21821#0" expanded="false" />
+            <element signature="e#21869#22522#0" expanded="false" />
+            <element signature="e#22558#22806#0" expanded="false" />
+            <element signature="e#22847#23159#0" expanded="false" />
+            <element signature="e#23247#23601#0" expanded="false" />
+            <element signature="e#23650#24001#0" expanded="false" />
+            <element signature="e#24050#24402#0" expanded="false" />
+            <element signature="e#24450#24801#0" expanded="false" />
+            <element signature="e#25110#25570#0" expanded="false" />
+            <element signature="e#25620#26002#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wumpus_planners.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
@@ -774,42 +804,6 @@
           <folding>
             <element signature="e#971#1003#0" expanded="true" />
             <element signature="e#1281#3158#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wumpus_kb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="280" column="0" lean-forward="true" selection-start-line="280" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
-          <folding>
-            <element signature="e#7419#7726#0" expanded="false" />
-            <element signature="e#8706#9015#0" expanded="false" />
-            <element signature="e#9087#9364#0" expanded="false" />
-            <element signature="e#9435#9719#0" expanded="false" />
-            <element signature="e#9805#10407#0" expanded="false" />
-            <element signature="e#10474#11057#0" expanded="false" />
-            <element signature="e#11118#11333#0" expanded="false" />
-            <element signature="e#11406#12190#0" expanded="false" />
-            <element signature="e#12898#13201#0" expanded="false" />
-            <element signature="e#13438#13755#0" expanded="false" />
-            <element signature="e#13838#14191#0" expanded="false" />
-            <element signature="e#14265#14585#0" expanded="false" />
-            <element signature="e#14668#15021#0" expanded="false" />
-            <element signature="e#15642#17295#0" expanded="false" />
-            <element signature="e#17374#18743#0" expanded="false" />
-            <element signature="e#19684#20338#0" expanded="false" />
-            <element signature="e#20386#21039#0" expanded="false" />
-            <element signature="e#21088#21742#0" expanded="false" />
-            <element signature="e#21790#22443#0" expanded="false" />
-            <element signature="e#22479#22727#0" expanded="false" />
-            <element signature="e#22768#23080#0" expanded="false" />
-            <element signature="e#23168#23522#0" expanded="false" />
-            <element signature="e#23571#23922#0" expanded="false" />
-            <element signature="e#23971#24323#0" expanded="false" />
-            <element signature="e#24371#24722#0" expanded="false" />
-            <element signature="e#25031#25491#0" expanded="false" />
-            <element signature="e#25541#25923#0" expanded="false" />
           </folding>
         </state>
       </provider>
