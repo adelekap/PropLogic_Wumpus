@@ -244,7 +244,7 @@ def axiom_generator_pits_and_breezes(x, y, xmin, xmax, ymin, ymax):
     for (xVal,yVal) in [((x-1),y),(x,(y-1)),((x+1),y),(x,(y+1))]:
         if xVal >= xmin and xVal <= xmax and yVal >= ymin and yVal <= ymax:
             pits.append(pit_str(xVal,yVal))
-    axiom_str += '{0} >> ({1})'.format(breeze_str(x,y),(' | ').join(pits))
+    axiom_str += '{0} <=> ({1})'.format(breeze_str(x,y),(' | ').join(pits))
 
     return axiom_str
 
@@ -276,7 +276,7 @@ def axiom_generator_wumpus_and_stench(x, y, xmin, xmax, ymin, ymax):
     for (xVal, yVal) in [((x - 1), y), (x, (y - 1)), ((x + 1), y), (x, (y + 1))]:
         if xVal >= xmin and xVal <= xmax and yVal >= ymin and yVal <= ymax:
             wumpi.append(wumpus_str(xVal, yVal))
-    axiom_str = '{0} >> ({1})'.format(stench_str(x, y), (' | ').join(wumpi))
+    axiom_str = '{0} <=> ({1})'.format(stench_str(x, y), (' | ').join(wumpi))
     return axiom_str
 
 
