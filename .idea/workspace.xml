@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87d86afe-8c7b-4d78-a672-9c25d578f7e0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wumpus_kb.py" afterPath="$PROJECT_DIR$/wumpus_kb.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wumpus_planners.py" afterPath="$PROJECT_DIR$/wumpus_planners.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,7 +24,7 @@
       <file leaf-file-name="wumpus.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wumpus.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="270">
               <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="e#951#977#0" expanded="true" />
@@ -36,7 +36,7 @@
       <file leaf-file-name="logic.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/logic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
+            <state relative-caret-position="3825">
               <caret line="257" column="0" lean-forward="false" selection-start-line="257" selection-start-column="0" selection-end-line="257" selection-end-column="0" />
               <folding>
                 <element signature="e#2014#2034#0" expanded="true" />
@@ -48,7 +48,7 @@
       <file leaf-file-name="wumpus_kb.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wumpus_kb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
+            <state relative-caret-position="4110">
               <caret line="281" column="0" lean-forward="false" selection-start-line="281" selection-start-column="0" selection-end-line="281" selection-end-column="0" />
               <folding>
                 <element signature="e#7458#7765#0" expanded="false" />
@@ -86,7 +86,7 @@
       <file leaf-file-name="propositions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/propositions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
+            <state relative-caret-position="4065">
               <caret line="488" column="0" lean-forward="false" selection-start-line="488" selection-start-column="0" selection-end-line="489" selection-end-column="20" />
               <folding>
                 <element signature="e#1265#1327#0" expanded="false" />
@@ -137,7 +137,7 @@
       <file leaf-file-name="wumpus_agent.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wumpus_agent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
+            <state relative-caret-position="2025">
               <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
               <folding>
                 <element signature="e#963#982#0" expanded="true" />
@@ -149,12 +149,9 @@
       <file leaf-file-name="wumpus_planners.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wumpus_planners.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="134" column="12" lean-forward="true" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="12" />
-              <folding>
-                <element signature="e#971#1003#0" expanded="true" />
-                <element signature="e#1281#3158#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="4830">
+              <caret line="324" column="0" lean-forward="true" selection-start-line="324" selection-start-column="0" selection-end-line="324" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -162,7 +159,7 @@
       <file leaf-file-name="search.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/search.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-284">
+            <state relative-caret-position="1095">
               <caret line="74" column="10" lean-forward="false" selection-start-line="74" selection-start-column="6" selection-end-line="74" selection-end-column="10" />
               <folding />
             </state>
@@ -198,8 +195,8 @@
       <list>
         <option value="$PROJECT_DIR$/logic.py" />
         <option value="$PROJECT_DIR$/propositions.py" />
-        <option value="$PROJECT_DIR$/wumpus_planners.py" />
         <option value="$PROJECT_DIR$/wumpus_kb.py" />
+        <option value="$PROJECT_DIR$/wumpus_planners.py" />
       </list>
     </option>
   </component>
@@ -526,19 +523,19 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -587,6 +584,137 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/wumpus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#951#977#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3825">
+          <caret line="257" column="0" lean-forward="false" selection-start-line="257" selection-start-column="0" selection-end-line="257" selection-end-column="0" />
+          <folding>
+            <element signature="e#2014#2034#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wumpus_kb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4110">
+          <caret line="281" column="0" lean-forward="false" selection-start-line="281" selection-start-column="0" selection-end-line="281" selection-end-column="0" />
+          <folding>
+            <element signature="e#7458#7765#0" expanded="false" />
+            <element signature="e#8785#9094#0" expanded="false" />
+            <element signature="e#9166#9443#0" expanded="false" />
+            <element signature="e#9514#9798#0" expanded="false" />
+            <element signature="e#9884#10486#0" expanded="false" />
+            <element signature="e#10553#11136#0" expanded="false" />
+            <element signature="e#11197#11412#0" expanded="false" />
+            <element signature="e#11485#12269#0" expanded="false" />
+            <element signature="e#12977#13280#0" expanded="false" />
+            <element signature="e#13517#13834#0" expanded="false" />
+            <element signature="e#13917#14270#0" expanded="false" />
+            <element signature="e#14344#14664#0" expanded="false" />
+            <element signature="e#14747#15100#0" expanded="false" />
+            <element signature="e#15721#17374#0" expanded="false" />
+            <element signature="e#17453#18822#0" expanded="false" />
+            <element signature="e#19763#20417#0" expanded="false" />
+            <element signature="e#20465#21118#0" expanded="false" />
+            <element signature="e#21167#21821#0" expanded="false" />
+            <element signature="e#21869#22522#0" expanded="false" />
+            <element signature="e#22558#22806#0" expanded="false" />
+            <element signature="e#22847#23159#0" expanded="false" />
+            <element signature="e#23247#23601#0" expanded="false" />
+            <element signature="e#23650#24001#0" expanded="false" />
+            <element signature="e#24050#24402#0" expanded="false" />
+            <element signature="e#24450#24801#0" expanded="false" />
+            <element signature="e#25110#25570#0" expanded="false" />
+            <element signature="e#25620#26002#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/propositions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4065">
+          <caret line="488" column="0" lean-forward="false" selection-start-line="488" selection-start-column="0" selection-end-line="489" selection-end-column="20" />
+          <folding>
+            <element signature="e#1265#1327#0" expanded="false" />
+            <element signature="e#1354#1419#0" expanded="false" />
+            <element signature="e#1446#1511#0" expanded="false" />
+            <element signature="e#1538#1603#0" expanded="false" />
+            <element signature="e#1787#1855#0" expanded="false" />
+            <element signature="e#1887#1955#0" expanded="false" />
+            <element signature="e#1988#2058#0" expanded="false" />
+            <element signature="e#2088#2152#0" expanded="false" />
+            <element signature="e#2184#2252#0" expanded="false" />
+            <element signature="e#2335#2414#0" expanded="false" />
+            <element signature="e#2447#2522#0" expanded="false" />
+            <element signature="e#2568#2783#0" expanded="false" />
+            <element signature="e#3017#3083#0" expanded="false" />
+            <element signature="e#3119#3183#0" expanded="false" />
+            <element signature="e#3220#3286#0" expanded="false" />
+            <element signature="e#3322#3386#0" expanded="false" />
+            <element signature="e#3420#3480#0" expanded="false" />
+            <element signature="e#3516#3583#0" expanded="false" />
+            <element signature="e#3750#3851#0" expanded="false" />
+            <element signature="e#3885#3977#0" expanded="false" />
+            <element signature="e#4012#4107#0" expanded="false" />
+            <element signature="e#4142#4237#0" expanded="false" />
+            <element signature="e#4276#4381#0" expanded="false" />
+            <element signature="e#4421#4529#0" expanded="false" />
+            <element signature="e#4563#4655#0" expanded="false" />
+            <element signature="e#4744#5016#0" expanded="false" />
+            <element signature="e#5314#6037#0" expanded="false" />
+            <element signature="e#6297#6487#0" expanded="false" />
+            <element signature="e#6561#7292#0" expanded="false" />
+            <element signature="e#7358#7665#0" expanded="false" />
+            <element signature="e#7740#8570#0" expanded="false" />
+            <element signature="e#8639#8948#0" expanded="false" />
+            <element signature="e#9019#9296#0" expanded="false" />
+            <element signature="e#9366#9650#0" expanded="false" />
+            <element signature="e#9737#10339#0" expanded="false" />
+            <element signature="e#10409#10993#0" expanded="false" />
+            <element signature="e#13381#13698#0" expanded="false" />
+            <element signature="e#13780#14133#0" expanded="false" />
+            <element signature="e#14206#14526#0" expanded="false" />
+            <element signature="e#14608#14961#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wumpus_agent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2025">
+          <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+          <folding>
+            <element signature="e#963#982#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wumpus_planners.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="74" column="10" lean-forward="false" selection-start-line="74" selection-start-column="6" selection-end-line="74" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wumpus.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -657,10 +785,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#971#1003#0" expanded="true" />
-            <element signature="e#1281#3158#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -676,7 +801,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wumpus.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="270">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="e#951#977#0" expanded="true" />
@@ -686,7 +811,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wumpus_agent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
+        <state relative-caret-position="2025">
           <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
           <folding>
             <element signature="e#963#982#0" expanded="true" />
@@ -696,7 +821,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/logic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
+        <state relative-caret-position="3825">
           <caret line="257" column="0" lean-forward="false" selection-start-line="257" selection-start-column="0" selection-end-line="257" selection-end-column="0" />
           <folding>
             <element signature="e#2014#2034#0" expanded="true" />
@@ -706,7 +831,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/propositions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
+        <state relative-caret-position="4065">
           <caret line="488" column="0" lean-forward="false" selection-start-line="488" selection-start-column="0" selection-end-line="489" selection-end-column="20" />
           <folding>
             <element signature="e#1265#1327#0" expanded="false" />
@@ -755,7 +880,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/search.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-284">
+        <state relative-caret-position="1095">
           <caret line="74" column="10" lean-forward="false" selection-start-line="74" selection-start-column="6" selection-end-line="74" selection-end-column="10" />
           <folding />
         </state>
@@ -763,7 +888,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wumpus_kb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
+        <state relative-caret-position="4110">
           <caret line="281" column="0" lean-forward="false" selection-start-line="281" selection-start-column="0" selection-end-line="281" selection-end-column="0" />
           <folding>
             <element signature="e#7458#7765#0" expanded="false" />
@@ -799,12 +924,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wumpus_planners.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="134" column="12" lean-forward="true" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="12" />
-          <folding>
-            <element signature="e#971#1003#0" expanded="true" />
-            <element signature="e#1281#3158#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="4830">
+          <caret line="324" column="0" lean-forward="true" selection-start-line="324" selection-start-column="0" selection-end-line="324" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

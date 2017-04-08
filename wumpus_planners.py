@@ -129,29 +129,61 @@ class PlanRouteProblem(search.Problem):
         """
         Heuristic that will be used by search.astar_search()
         """
-        "*** YOUR CODE HERE ***"
-        pass
+        return 0
 
     def actions(self, state):
         """
         Return list of allowed actions that can be made in state
         """
-        "*** YOUR CODE HERE ***"
-        pass
+        yesForward = ['Foward','TurnRight','TurnLeft','Wait']
+        noForward = ['TurnRight','TurnLeft','Wait']
+        if (state[0] == 1 and state[2] == 1) or (state[0] == 4 and state[2] == 3) or (state[1] == 1 and state[2] == 2) or (state[1] == 4 and state[2] == 0):
+            return noForward
+        return yesForward
 
     def result(self, state, action):
         """
         Return the new state after applying action to state
         """
-        "*** YOUR CODE HERE ***"
-        pass
+        if action == 'TurnRight':
+            if state[2] == 0:
+                return (state[0],state[1],3)
+            if state[2] == 1:
+                return (state[0],state[1],0)
+            if state[2] == 2:
+                return(state[0],state[1],1)
+            if state[2] == 3:
+                return (state[0],state[1],2)
+
+        if action == 'TurnLeft':
+            if state[2] == 0:
+                return (state[0],state[1],1)
+            if state[2] == 1:
+                return (state[0],state[1],2)
+            if state[2] == 2:
+                return (state[0],state[1],3)
+            if state[2] == 3:
+                return (state[0],state[1],0)
+
+        if action == 'Wait':
+            return state
+
+        if action == 'Forward':
+            if state[2] == 0:
+                return (state[0],state[1] + 1,state[2])
+            if state[2] == 1:
+                return (state[0]-1,state[1],state[2])
+            if state[2] == 2:
+                return (state[0],state[1]-1,state[2])
+            if state[2] == 3:
+                return (state[0]+1,state[1],state[2])
 
     def goal_test(self, state):
         """
         Return True if state is a goal state
         """
-        "*** YOUR CODE HERE ***"
-        return True
+        return state[0:2] in self.goals
+
 
 
 # -------------------------------------------------------------------------------
