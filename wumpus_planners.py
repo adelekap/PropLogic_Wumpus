@@ -136,8 +136,8 @@ class PlanRouteProblem(search.Problem):
         """
         Return list of allowed actions that can be made in state
         """
-        yesForward = ['Forward','TurnRight','TurnLeft','Wait']
-        noForward = ['TurnRight','TurnLeft','Wait']
+        yesForward = ['Forward','TurnRight','TurnLeft','Climb','Grab']
+        noForward = ['TurnRight','TurnLeft','Grab','Climb']
         if (state[0] == 1 and state[2] == 1) or (state[0] == 4 and state[2] == 3) or (state[1] == 1 and state[2] == 2) or (state[1] == 4 and state[2] == 0):
             return noForward
         return yesForward
@@ -166,7 +166,10 @@ class PlanRouteProblem(search.Problem):
             if state[2] == 3:
                 return (state[0],state[1],0)
 
-        if action == 'Wait':
+        if action == 'Grab':
+            return state
+
+        if action == 'Climb':
             return state
 
         if action == 'Forward':
@@ -219,6 +222,10 @@ def test_PRP(initial):
                        (2, 0), (2, 3),
                        (3, 0), (3, 1), (3, 2), (3, 3)])
 
+# test1 = test_PRP((0,0,0))
+# test2 = test_PRP((0,0,1))
+# test3 = test_PRP((0,0,2))
+# test4 = test_PRP((0,0,3))
 
 # -------------------------------------------------------------------------------
 # Plan Shot
@@ -268,25 +275,24 @@ class PlanShotProblem(search.Problem):
         """
         Heuristic that will be used by search.astar_search()
         """
-        "*** YOUR CODE HERE ***"
-        pass
+        distanceToGoals = [manhattan_distance_with_heading(node.state,goal) for goal in self.goals]
+        return min(distanceToGoals)
 
     def actions(self, state):
         """
         Return list of allowed actions that can be made in state
         """
-        "*** YOUR CODE HERE ***"
-        pass
-
-        "*** YOUR CODE HERE ***"
-        pass
+        yesForward = ['Forward','TurnRight','TurnLeft','Climb','Grab','Shoot','Wait']
+        noForward = ['TurnRight','TurnLeft','Grab','Climb','Shoot','Wait']
+        if (state[0] == 1 and state[2] == 1) or (state[0] == 4 and state[2] == 3) or (state[1] == 1 and state[2] == 2) or (state[1] == 4 and state[2] == 0):
+            return noForward
+        return yesForward
 
     def goal_test(self, state):
         """
         Return True if state is a goal state
         """
-        "*** YOUR CODE HERE ***"
-        return True
+        return state[0:2] in self.goals
 
 
 # -------------------------------------------------------------------------------
