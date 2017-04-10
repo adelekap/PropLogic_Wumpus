@@ -80,7 +80,7 @@ def plan_route(current, heading, goals, allowed):
     Given:
        current location: tuple (x,y)
        heading: integer representing direction
-       gaals: list of one or more tuple goal-states
+       goals: list of one or more tuple goal-states
        allowed: list of locations that can be moved to
     ... return a list of actions (no time stamps!) that when executed
     will take the agent from the current location to one of (the closest)
@@ -129,13 +129,14 @@ class PlanRouteProblem(search.Problem):
         """
         Heuristic that will be used by search.astar_search()
         """
-        return 0
+        distanceToGoals = [manhattan_distance_with_heading(node.state,goal) for goal in self.goals]
+        return min(distanceToGoals)
 
     def actions(self, state):
         """
         Return list of allowed actions that can be made in state
         """
-        yesForward = ['Foward','TurnRight','TurnLeft','Wait']
+        yesForward = ['Forward','TurnRight','TurnLeft','Wait']
         noForward = ['TurnRight','TurnLeft','Wait']
         if (state[0] == 1 and state[2] == 1) or (state[0] == 4 and state[2] == 3) or (state[1] == 1 and state[2] == 2) or (state[1] == 4 and state[2] == 0):
             return noForward
