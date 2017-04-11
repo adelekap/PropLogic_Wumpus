@@ -106,6 +106,8 @@ def plan_route(current, heading, goals, allowed):
         #       the heuristic, so no need to provide here to astar_search()
         node = search.astar_search(prp)
         if node:
+            test = node.solution()
+            return test
             return node.solution()
 
     # no route can be found, return empty list
@@ -136,8 +138,8 @@ class PlanRouteProblem(search.Problem):
         """
         Return list of allowed actions that can be made in state
         """
-        yesForward = ['Forward','TurnRight','TurnLeft','Climb','Grab']
-        noForward = ['TurnRight','TurnLeft','Grab','Climb']
+        yesForward = ['Forward','TurnRight','TurnLeft']
+        noForward = ['TurnRight','TurnLeft']
         if (state[0] == 1 and state[2] == 1) or (state[0] == 4 and state[2] == 3) or (state[1] == 1 and state[2] == 2) or (state[1] == 4 and state[2] == 0):
             return noForward
         return yesForward
@@ -145,6 +147,10 @@ class PlanRouteProblem(search.Problem):
     def result(self, state, action):
         """
         Return the new state after applying action to state
+        0 = North
+        1 = West
+        2 = South
+        3 = East
         """
         if action == 'TurnRight':
             if state[2] == 0:
@@ -165,12 +171,6 @@ class PlanRouteProblem(search.Problem):
                 return (state[0],state[1],3)
             if state[2] == 3:
                 return (state[0],state[1],0)
-
-        if action == 'Grab':
-            return state
-
-        if action == 'Climb':
-            return state
 
         if action == 'Forward':
             if state[2] == 0:
@@ -222,10 +222,11 @@ def test_PRP(initial):
                        (2, 0), (2, 3),
                        (3, 0), (3, 1), (3, 2), (3, 3)])
 
-# test1 = test_PRP((0,0,0))
-# test2 = test_PRP((0,0,1))
-# test3 = test_PRP((0,0,2))
-# test4 = test_PRP((0,0,3))
+test1 = test_PRP((0,0,0))
+test2 = test_PRP((0,0,1))
+test3 = test_PRP((0,0,2))
+test4 = test_PRP((0,0,3))
+Why = 'sad face'
 
 # -------------------------------------------------------------------------------
 # Plan Shot
@@ -278,15 +279,56 @@ class PlanShotProblem(search.Problem):
         distanceToGoals = [manhattan_distance_with_heading(node.state,goal) for goal in self.goals]
         return min(distanceToGoals)
 
+    def result(self, state, action):
+        """Return the state that results from executing the given
+        action in the given state. The action must be one of
+        self.actions(state)."""
+        if action == 'TurnRight':
+            if state[2] == 0:
+                return (state[0],state[1],3)
+            if state[2] == 1:
+                return (state[0],state[1],0)
+            if state[2] == 2:
+                return(state[0],state[1],1)
+            if state[2] == 3:
+                return (state[0],state[1],2)
+
+        if action == 'TurnLeft':
+            if state[2] == 0:
+                return (state[0],state[1],1)
+            if state[2] == 1:
+                return (state[0],state[1],2)
+            if state[2] == 2:
+                return (state[0],state[1],3)
+            if state[2] == 3:
+                return (state[0],state[1],0)
+
+        if action == 'Forward':
+            if state[2] == 0:
+                return (state[0],state[1] + 1,state[2])
+            if state[2] == 1:
+                return (state[0]-1,state[1],state[2])
+            if state[2] == 2:
+                return (state[0],state[1]-1,state[2])
+            if state[2] == 3:
+                return (state[0]+1,state[1],state[2])
+
+        if action == 'Shoot':
+            return state
+
+        if action == 'Wait':
+            return state
+
     def actions(self, state):
         """
         Return list of allowed actions that can be made in state
         """
-        yesForward = ['Forward','TurnRight','TurnLeft','Climb','Grab','Shoot','Wait']
-        noForward = ['TurnRight','TurnLeft','Grab','Climb','Shoot','Wait']
+        yesForward = ['Forward','TurnRight','TurnLeft','Shoot','Wait']
+        noForward = ['TurnRight','TurnLeft','Shoot','Wait']
         if (state[0] == 1 and state[2] == 1) or (state[0] == 4 and state[2] == 3) or (state[1] == 1 and state[2] == 2) or (state[1] == 4 and state[2] == 0):
             return noForward
         return yesForward
+
 
     def goal_test(self, state):
         """
@@ -328,4 +370,9 @@ def test_PSP(initial=(0, 0, 3)):
                       (3, 0), (3, 1), (3, 2), (3, 3)])
 
 # -------------------------------------------------------------------------------
+test5 = test_PSP((0,0,0))
+test6 = test_PSP((0,0,1))
+test7 = test_PSP((0,0,2))
+test8 = test_PSP((0,0,3))
+testing_testing = "yo"
 
