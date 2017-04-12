@@ -140,9 +140,15 @@ class PlanRouteProblem(search.Problem):
         """
         yesForward = ['Forward','TurnRight','TurnLeft']
         noForward = ['TurnRight','TurnLeft']
-        if (state[0] == 1 and state[2] == 1) or (state[0] == 4 and state[2] == 3) or (state[1] == 1 and state[2] == 2) or (state[1] == 4 and state[2] == 0):
-            return noForward
-        return yesForward
+        if state[2] == 0 and (state[0],state[1]+1) in self.allowed:
+            return yesForward
+        if state[2] == 1 and (state[0]-1,state[1]) in self.allowed:
+            return yesForward
+        if state[2] == 2 and (state[0],state[1]-1) in self.allowed:
+            return yesForward
+        if state[2] == 3 and (state[0]+1,state[1]) in self.allowed:
+            return yesForward
+        return noForward
 
     def result(self, state, action):
         """
@@ -222,12 +228,6 @@ def test_PRP(initial):
                        (2, 0), (2, 3),
                        (3, 0), (3, 1), (3, 2), (3, 3)])
 
-test1 = test_PRP((0,0,0))
-test2 = test_PRP((0,0,1))
-test3 = test_PRP((0,0,2))
-test4 = test_PRP((0,0,3))
-Why = 'sad face'
-
 # -------------------------------------------------------------------------------
 # Plan Shot
 # -------------------------------------------------------------------------------
@@ -276,8 +276,18 @@ class PlanShotProblem(search.Problem):
         """
         Heuristic that will be used by search.astar_search()
         """
-        distanceToGoals = [manhattan_distance_with_heading(node.state,goal) for goal in self.goals]
-        return min(distanceToGoals)
+        possibleWumpusLocations = self.goals
+        explorerLocations = self.allowed
+        shotSpots = []
+
+        for WumpusLoc in possibleWumpusLocations:
+            for ExplorerLoc in explorerLocations:
+                if (WumpusLoc[0] == ExplorerLoc[0]) or (WumpusLoc[1] == ExplorerLoc[1]):
+                    shotSpots.append(ExplorerLoc)
+
+        distanceToShotSpots = [manhattan_distance_with_heading(node.state, goal) for goal in shotSpots]
+        return min(distanceToShotSpots)
+
 
     def result(self, state, action):
         """Return the state that results from executing the given
@@ -313,29 +323,44 @@ class PlanShotProblem(search.Problem):
             if state[2] == 3:
                 return (state[0]+1,state[1],state[2])
 
-        if action == 'Shoot':
-            return state
-
-        if action == 'Wait':
-            return state
-
     def actions(self, state):
         """
         Return list of allowed actions that can be made in state
         """
-        yesForward = ['Forward','TurnRight','TurnLeft','Shoot','Wait']
-        noForward = ['TurnRight','TurnLeft','Shoot','Wait']
-        if (state[0] == 1 and state[2] == 1) or (state[0] == 4 and state[2] == 3) or (state[1] == 1 and state[2] == 2) or (state[1] == 4 and state[2] == 0):
-            return noForward
-        return yesForward
+        yesForward = ['Forward', 'TurnRight', 'TurnLeft']
+        noForward = ['TurnRight', 'TurnLeft']
+        if state[2] == 0 and (state[0], state[1] + 1) in self.allowed:
+            return yesForward
+        if state[2] == 1 and (state[0] - 1, state[1]) in self.allowed:
+            return yesForward
+        if state[2] == 2 and (state[0], state[1] - 1) in self.allowed:
+            return yesForward
+        if state[2] == 3 and (state[0] + 1, state[1]) in self.allowed:
+            return yesForward
+        return noForward
 
 
     def goal_test(self, state):
         """
         Return True if state is a goal state
         """
-        return state[0:2] in self.goals
+        possibleWumpusLocations = self.goals
 
+        if state in self.goals:
+            return False
+
+        for location in possibleWumpusLocations:
+            if location[0] == state[0]:
+                if ((location[1] > state[1]) and state[2] == 0):
+                    return True
+                if ((location[1] < state[1]) and state[2] == 2):
+                    return True
+            if location[1] == state[1]:
+                if ((location[0] < state[0]) and state[2] == 1):
+                    return True
+                if ((location[0] > state[0]) and state[2] == 3):
+                    return True
+        return False
 
 # -------------------------------------------------------------------------------
 
@@ -370,9 +395,5 @@ def test_PSP(initial=(0, 0, 3)):
                       (3, 0), (3, 1), (3, 2), (3, 3)])
 
 # -------------------------------------------------------------------------------
-test5 = test_PSP((0,0,0))
-test6 = test_PSP((0,0,1))
-test7 = test_PSP((0,0,2))
-test8 = test_PSP((0,0,3))
-testing_testing = "yo"
+
 

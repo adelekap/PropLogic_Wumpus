@@ -248,7 +248,16 @@ def axiom_generator_pits_and_breezes(x, y, xmin, xmax, ymin, ymax):
     axiom_str += '{0} <=> ({1})'.format(breeze_str(x,y),(' | ').join(pits))
 
     return axiom_str
-
+    # axioms =[]
+    # rooms = [(xVal,yVal) for xVal in range(xmin,xmax+1) for yVal in range(ymin,ymax+1)]
+    # for room in rooms:
+    #     pits =[]
+    #     for (xCoor,yCoor) in [((room[0]-1),room[1]),(room[0],(room[1]-1)),((room[0]+1),room[1]),(room[0],(room[1]+1))]:
+    #         if xCoor >= xmin and xCoor <= xmax and yCoor >= ymin and yCoor <= ymax:
+    #             pits.append(pit_str(xCoor,yCoor))
+    #     axioms.append('({0} <=> ({1}))'.format(breeze_str(room[0],room[1]),(' | ').join(pits)))
+    # axiom_str = ' & '.join(axioms)
+    # return axiom_str
 
 def generate_pit_and_breeze_axioms(xmin, xmax, ymin, ymax):
     axioms = []
@@ -310,10 +319,19 @@ def axiom_generator_at_most_one_wumpus(xmin, xmax, ymin, ymax):
 
     xmin, xmax, ymin, ymax := the bounds of the environment.
     """
-    rooms = ['~' + wumpus_str(xVal,yVal) for xVal in range(xmin,xmax + 1) for yVal in range(ymin,ymax + 1)]
-    axiom_str = ' | '.join(rooms)
-    return axiom_str
+    # rooms = ['~' + wumpus_str(xVal,yVal) for xVal in range(xmin,xmax + 1) for yVal in range(ymin,ymax + 1)]
+    # axiom_str = ' | '.join(rooms)
+    # return axiom_str
 
+    rooms = [(xVal, yVal) for xVal in range(xmin, xmax + 1) for yVal in range(ymin, ymax + 1)]
+    axioms = []
+
+    for room in rooms:
+        notRooms = [thisRoom for thisRoom in rooms if thisRoom != room]
+        noWumpus = ['~'+wumpus_str(w[0],w[1]) for w in notRooms]
+        axioms.append('({0} >> ({1}))'.format(wumpus_str(room[0],room[1]),' & '.join(noWumpus)))
+    axiom_str = ' & '.join(axioms)
+    return axiom_str
 
 def axiom_generator_only_in_one_location(xi, yi, xmin, xmax, ymin, ymax, t=0):
     """
