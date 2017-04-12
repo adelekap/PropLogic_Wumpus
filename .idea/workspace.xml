@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87d86afe-8c7b-4d78-a672-9c25d578f7e0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wumpus_kb.py" afterPath="$PROJECT_DIR$/wumpus_kb.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wumpus_planners.py" afterPath="$PROJECT_DIR$/wumpus_planners.py" />
-    </list>
+    <list default="true" id="87d86afe-8c7b-4d78-a672-9c25d578f7e0" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,8 +44,8 @@
       <file leaf-file-name="wumpus_planners.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wumpus_planners.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="397" column="0" lean-forward="true" selection-start-line="397" selection-start-column="0" selection-end-line="397" selection-end-column="0" />
+            <state relative-caret-position="319">
+              <caret line="357" column="0" lean-forward="false" selection-start-line="357" selection-start-column="0" selection-end-line="357" selection-end-column="0" />
               <folding>
                 <element signature="e#971#1003#0" expanded="true" />
               </folding>
@@ -480,41 +476,6 @@
           <line>367</line>
           <option name="timeStamp" value="87" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/wumpus_planners.py</url>
-          <line>346</line>
-          <option name="timeStamp" value="181" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/wumpus_planners.py</url>
-          <line>329</line>
-          <option name="timeStamp" value="182" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/wumpus_planners.py</url>
-          <line>295</line>
-          <option name="timeStamp" value="183" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/wumpus_planners.py</url>
-          <line>278</line>
-          <option name="timeStamp" value="184" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/wumpus_planners.py</url>
-          <line>362</line>
-          <option name="timeStamp" value="188" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/wumpus_planners.py</url>
-          <line>288</line>
-          <option name="timeStamp" value="189" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/wumpus_planners.py</url>
-          <line>339</line>
-          <option name="timeStamp" value="190" />
-        </line-breakpoint>
       </breakpoints>
       <option name="time" value="191" />
     </breakpoint-manager>
@@ -793,8 +754,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wumpus_planners.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="397" column="0" lean-forward="true" selection-start-line="397" selection-start-column="0" selection-end-line="397" selection-end-column="0" />
+        <state relative-caret-position="319">
+          <caret line="357" column="0" lean-forward="false" selection-start-line="357" selection-start-column="0" selection-end-line="357" selection-end-column="0" />
           <folding>
             <element signature="e#971#1003#0" expanded="true" />
           </folding>
